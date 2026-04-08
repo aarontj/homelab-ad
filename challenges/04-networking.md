@@ -47,7 +47,7 @@ I set up an Internal switch with NAT, which gave me the best of both worlds:
 1. Created an Internal virtual switch in Hyper-V Manager
 2. Assigned a static IP to the host's internal adapter (`192.168.0.1`)
 **Setting Static IP on Host Machine**
-<img src="https://github.com/user-attachments/assets/9a052555-cf2a-42af-b3f7-2f3efaa31ac3" width="750" alt="Server IP">
+<img src="https://github.com/user-attachments/assets/5f504509-0d90-485d-9157-1639738f261a" width="750" alt="Server IP">
 
 3. Ran the following PowerShell command on host machine to configure NAT:
 ```powershell
@@ -58,27 +58,33 @@ New-NetNat -Name VMNAT -InternalIPInterfaceAddressPrefix 192.168.0.0/24
 Get-NetNat
 ```
 5. Updated Server VM & Client VM network adapter to use the internal switch
-**Internal Switch**
-<img src="https://github.com/user-attachments/assets/3e4e6a60-18e6-4234-ad13-83dc23ab1ddb" width="750" alt="Internal Switch">
+
+<img src="https://github.com/user-attachments/assets/9aabc122-bfa4-4f4b-b229-bffef7633d0d" width="750" alt="Internal Switch">
 
 6. On each VM search "Network Connections", right click the ethernet connection and go into properties
 7. Find IPV4 and update the IP address for `Server: 192.168.0.10` and `Client: 192.168.0.20`
+
 **Setting Static IP & DNS for Server VM**
-<img src="https://github.com/user-attachments/assets/2c632a2f-fa0c-4f10-a19b-d5761d852137" width="750" alt="Server IP">
+
+<img src="https://github.com/user-attachments/assets/886dc46a-5c6f-49eb-a19c-b5a6f32cea99" width="750" alt="Server IP">
 
 **Setting Static IP & DNS for Client VM**
-<img src="https://github.com/user-attachments/assets/4b5dab5c-3ab2-4ebe-869a-a5eea5f9aeaa" width="750" alt="Server IP">
+
+<img src="https://github.com/user-attachments/assets/3a278369-bdaf-404b-b96a-c652c17d48ff" width="750" alt="Server IP">
 
 8. Verified VM-to-VM connectivity and internet access via ping
+
 **Ping to Client**
-<img src="https://github.com/user-attachments/assets/0b9aa6a4-d997-4ac4-8432-ef853c8b5069" width="750" alt="Ping to Client">
+
+<img src="https://github.com/user-attachments/assets/5125da7c-1019-42dd-8134-07cbcaec8384" width="750" alt="Ping to Client">
 
 9. Confirmed host isolation — pinging `192.168.0.1` from a VM fails 
+
 **Ping to Host fail**
-<img src="https://github.com/user-attachments/assets/7c9c7c04-031c-4d35-b87b-07dec9a37326" width="750" alt="Ping Fail">
+
+<img src="https://github.com/user-attachments/assets/56998aed-813f-4454-906f-3782f30750e6" width="750" alt="Ping Fail">
 
 ---
-
 
 
 
