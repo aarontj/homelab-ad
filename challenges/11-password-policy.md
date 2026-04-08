@@ -18,21 +18,20 @@
 2. Click "Tools" then click "Group Policy Mangement"
 3. Click the drop down arrow on the domain forest
 4. Expand "Group Policy Objects"
-<img src="https://github.com/user-attachments/assets/64db70e6-02d7-4f5f-b2c0-1f4df692c26a" width="750" alt="GPO Default">
+<img src="https://github.com/user-attachments/assets/dcb09efc-709d-4aa8-8c98-f0e8f6ec199f" width="750" alt="GPO Default">
 
 5. Right click on "Default Domain Policy" and click **Edit**
 6. Follow the path Computer Configuration → Windows Settings → Security Settings → Account Policies until you find "Password Policy"
-<img src="https://github.com/user-attachments/assets/97897fa3-17b7-42a9-ac18-9b9ad1c1905e" width="750" alt="GPO Password">
+<img src="https://github.com/user-attachments/assets/0ad81caa-417a-4c7e-89af-29ede7656ab6" width="750" alt="GPO Password">
 
 7. Edit the relevant policy as per the challenge
 8. To create a "Lockout Policy" you will need to go back and find "Account Lockout Policy"
 9. Edit the "Account lockout threshold" policy to "5"
-<img src="https://github.com/user-attachments/assets/422fcbbf-93a6-4828-8e8d-5a4c0be004c9" width="750" alt="GPO Lockout">
+<img src="https://github.com/user-attachments/assets/024a5a7e-eff9-46b4-8681-ace4b7e78e9a" width="750" alt="GPO Lockout">
 
 10. Open CMD and run `gpupdate /force`
-<img src="https://github.com/user-attachments/assets/3589a58e-df72-42eb-9d10-4b5b6de7aa9f" width="750" alt="GP Update">
+<img src="https://github.com/user-attachments/assets/6a046477-ce7e-4060-9905-a0b1a1ea6451" width="750" alt="GP Update">
 
 ---
-
 
 
