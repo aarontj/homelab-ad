@@ -40,11 +40,11 @@ tjserverlab.local
 2. Let's create `GRP-IT-Admins` security group within Admin Groups
 3. Follow the folder path and right click Admin Groups
 4. Click **New** > **Group**
-<img src="https://github.com/user-attachments/assets/29807bac-570b-4c87-ab73-aa584090f998" width="1000" alt="Creating Security Group">
+<img src="https://github.com/user-attachments/assets/cd057c67-21c6-4e0f-bf1f-10bc764ecded" width="750" alt="Creating Security Group">
 
 5. Fill in the fields and ensure that Group Scope is "Global" and Group type is "Security"
 6. Now just follow the same steps for `GRP-HR`, `GRP-Finance`, `GRP-Marketing`, `GRP-IT`
-<img src="https://github.com/user-attachments/assets/abcec85e-4668-4216-a820-4f6c79b33042" width="1000" alt="Security Groups">
+<img src="https://github.com/user-attachments/assets/a1e85bb7-5c2a-4b68-9752-da23fe16ca00" width="750" alt="Security Groups">
 
 ---
 
@@ -54,7 +54,7 @@ tjserverlab.local
 3. Click "Add" then search for the users name eg. `adm.j.hartley` (you don't need to put the full name) then press **enter** to search
 4. Click on the user then press **ok**
 5. `adm.j.hartley` should now appear in the Members box
-<img src="https://github.com/user-attachments/assets/3d036158-3d3f-49c1-810f-3e4d0de46539" width="1000" alt="Security Groups">
+<img src="https://github.com/user-attachments/assets/5bb2a17a-0ed9-4cfe-b9e5-bc43a188b65f" width="750" alt="Security Groups">
 
 6. Now do this for all security groups created `GRP-HR`, `GRP-Finance`, `GRP-Marketing`, `GRP-IT`
 
