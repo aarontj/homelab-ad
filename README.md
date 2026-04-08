@@ -295,7 +295,7 @@ Goal: `PC1` is joined to `tjserverlab.local` and a domain user can log in.
 - On `PC1`: System Properties > Change > Member of Domain > `tjserverlab.local`
 - Entered domain admin credentials when prompted
 - Rebooted after successful join
-- In ADUC, moved the `PC1` computer object into the `Workstations` OU
+- In ADUC, moved `PC1` computer object into `Workstations` OU
 - Logged in with a domain user account (`tjserverlab\j.beckett`) to confirm domain authentication
 
 Outcome: Client domain-joined. Domain user accounts authenticate successfully from the workstation.
