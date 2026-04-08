@@ -26,7 +26,7 @@
 
 7. Edit the relevant policy as per the challenge
 8. To create a "Lockout Policy" you will need to go back and find "Account Lockout Policy"
-9. Edit the "Account lockout threshold" policy to **5**
+9. Edit the "Account lockout threshold" policy to "5"
 <img src="https://github.com/user-attachments/assets/422fcbbf-93a6-4828-8e8d-5a4c0be004c9" width="750" alt="GPO Lockout">
 
 10. Open CMD and run `gpupdate /force`
