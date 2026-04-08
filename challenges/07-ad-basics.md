@@ -20,10 +20,10 @@ The `Computer` OU is the default container where new/ existing computers appear 
 
 The `Domain Controllers` is the OU where all DC's within the same domain sit eg. `WIN-DH9D3SPO213`.
 
-There was nothing else inside of `Domain Trust` other than my domain that i have created. From my reasearch this is where you manage trust relationships so that other domains for accessing resources.
+There was nothing else inside of `Domain Trust` other than my domain that i have created. From my reasearch this is where you manage trust relationships for other domains to access resources.
 <img src="https://github.com/user-attachments/assets/06dccf85-25be-4811-b06d-27d1de33ef00" width="750" alt="Domaintrust">
 
-The AD Sites and Services is used to manage domain controllers, this is where you manage different sites and setup replication. Replication is used so domain controllers are automatically synchronised between different domain controllers.
+The AD Sites and Services is used to manage domain controllers, this is where you manage different sites and setup replication. Replication is used so domain controllers are automatically synchronised between other domain controllers.
 <img src="https://github.com/user-attachments/assets/2d89297a-6fe5-4719-af50-eb0e161b1852" width="750" alt="ADSites">
 
 ---
