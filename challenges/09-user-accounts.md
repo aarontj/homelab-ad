@@ -54,35 +54,40 @@ tjserverlab.local
 2. Head to **Staff** > **IT** > **New** > **User**
 3. Input their name accordingly in the fields while following the naming convention of first initial dot last name (e.g. j.hartley)
 
-<img src="https://github.com/user-attachments/assets/1bcf6c94-b188-4148-805a-2632192f440c" width="750" alt="Creating User">
+<img src="https://github.com/user-attachments/assets/ed6b2383-635c-4f9c-be86-731749abf1bd" width="750" alt="Creating User">
 
 4. Hit **Next** and provide a temporary password and ensure that "User must change password at next logon" checkbox is ticked
 
-<img src="https://github.com/user-attachments/assets/0a6688b6-01a0-4e82-afb3-cfd2b2d94e04" width="750" alt="Password">
+<img src="https://github.com/user-attachments/assets/7847f11b-0efe-4c81-9b77-3a917056bfbe" width="750" alt="Password">
 
 5. Follow these steps for all the other users in their respective SUB organisational units
 
 ---
 
 #### All Users
+
 **Finance**
 
-<img src="https://github.com/user-attachments/assets/7cac728a-efa2-4c0e-8733-72283dfeb962" width="750" alt="Finance">
+<img src="https://github.com/user-attachments/assets/0a5b0a5f-c1eb-40fe-8f8a-5539e8395d4e" width="750" alt="Finance">
 
 **HR**
 
-<img src="https://github.com/user-attachments/assets/81a498f2-3799-49be-adaa-391fbbb5729c" width="750" alt="HR">
+<img src="https://github.com/user-attachments/assets/385877ff-68c1-4e7c-adae-679eead27a33" width="750" alt="HR">
 
 **IT**
 
-<img src="https://github.com/user-attachments/assets/33d0d941-dcee-4ea7-b331-024aa3e0416e" width="750" alt="IT">
+<img src="https://github.com/user-attachments/assets/612b6849-8b4e-42cc-b6dd-0fe44b0ff1fe" width="750" alt="IT">
 
 **Marketing**
 
-<img src="https://github.com/user-attachments/assets/d4730d29-765e-48ce-b1b4-794cc1191f47" width="750" alt="Marketing">
+<img src="https://github.com/user-attachments/assets/dd6277df-27ef-4cf8-a4ed-af74f495cae9" width="750" alt="Marketing">
 
 **Adm Users**
 
-<img src="https://github.com/user-attachments/assets/278a9b31-5ec3-4910-a7f8-0f023d7d4194" width="750" alt="ADM Users">
+<img src="https://github.com/user-attachments/assets/be63b5e4-dd66-4364-9283-700140f2b425" width="750" alt="ADM Users">
 
 ---
+
+
+
+
