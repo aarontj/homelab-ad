@@ -1,4 +1,4 @@
-### Challenge 4:Networking
+### Challenge 4: Networking
 
 **Goal:** VM has a static IP address and confirmed internet connectivity.
 
