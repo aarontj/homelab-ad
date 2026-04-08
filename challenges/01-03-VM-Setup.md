@@ -51,8 +51,7 @@ I have years of experience building pc's so i didn't think about documenting on 
 **Enable Hyper-V**
 1. Look for "Turn Windows features on or off" in the search bar
 2. Tick Hyper-V and let it download and install
-<img src="https://github.com/user-attachments/assets/7627b64f-8fac-4f84-8179-2cac1152edfd" width="750" alt="Windows On or Off">
-<img width="409" height="361" alt="windowsonoroff" src="https://github.com/user-attachments/assets/bfc6d65d-4cad-4ff3-9a47-60d21d4f0a49" />
+<img src="https://github.com/user-attachments/assets/bfc6d65d-4cad-4ff3-9a47-60d21d4f0a49" width="750" alt="Windows On or Off">
 
 3. Restart desktop when requested
 
@@ -64,20 +63,19 @@ I have years of experience building pc's so i didn't think about documenting on 
 3. Name: ServerLab > Generation 2 > Startup Memory: 4096 MB > Connection: No Connection
 4. Choose "Create a virtual hard disk", for location i have decided to put it my E: drive and Size is 60GB
 **Hyper V Specs**
-<img src="https://github.com/user-attachments/assets/4786b79b-9f2d-4334-a9a4-2966cc20cbe2" width="750" alt="Hyper-V VM Specifications">
+<img src="https://github.com/user-attachments/assets/2add102d-9d5c-40a2-80b2-5f82cce6c96a" width="750" alt="Hyper-V VM Specifications">
 
 6. Click next and select "Install an operating system from a bootable image file" 
 7. Locate the ISO file and press next
 8. Double click the new VM and press start and follow the steps to install Windows Server 2022 with GUI
-<img src="https://github.com/user-attachments/assets/87a699df-879b-46aa-b8f5-191e5444b3f6" width="750" alt="Hyper V Server VM">
+<img src="https://github.com/user-attachments/assets/1e2e118d-d14c-4ba6-8d80-7656e1c1e310" width="750" alt="Hyper V Server VM">
 
 9. Once booted into Windows, run Windows Update and allow the device to restart when required
 
 Sucessfully created a VM with Windows Server 2022 installed
-<img src="https://github.com/user-attachments/assets/8b4ced6e-0e4f-4931-879b-f4ba25a1497e" width="750" alt="Windows Server Booted">
+<img src="https://github.com/user-attachments/assets/96af2b2e-baa0-43ee-99e3-b9abacd0ab7d" width="750" alt="Windows Server Booted">
 
 ---
-
 
 
 
