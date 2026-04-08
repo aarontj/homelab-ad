@@ -52,6 +52,7 @@ I have years of experience building pc's so i didn't think about documenting on 
 1. Look for "Turn Windows features on or off" in the search bar
 2. Tick Hyper-V and let it download and install
 <img src="https://github.com/user-attachments/assets/7627b64f-8fac-4f84-8179-2cac1152edfd" width="750" alt="Windows On or Off">
+<img width="409" height="361" alt="windowsonoroff" src="https://github.com/user-attachments/assets/bfc6d65d-4cad-4ff3-9a47-60d21d4f0a49" />
 
 3. Restart desktop when requested
 
