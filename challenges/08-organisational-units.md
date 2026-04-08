@@ -39,25 +39,23 @@ tjserverlab.local
 3. Expand the forest "Tjserverlab.local"
 4. Right click the forest and click **New** > **Organisational Units**
 
-<img src="https://github.com/user-attachments/assets/fca67094-2f0b-49f6-b613-e991f3a1e0a6" width="750" alt="OU">
+<img src="https://github.com/user-attachments/assets/f993282b-c80e-476e-a793-258da3591e7b" width="750" alt="OU">
 
 
 5. Create the OU's `Staff`, `Workstations`, `Groups`, `_Admin`
 
-<img src="https://github.com/user-attachments/assets/e4e898f8-b1ce-498e-a9d3-01e1142b552f" width="750" alt="OU">
+<img src="https://github.com/user-attachments/assets/7b0f34e7-7132-4d65-96e1-137501959b70" width="750" alt="OU">
 
 6. Once those are created, right click on "Staff" OU and click **New** > **Organisational Units**
 7. Created the following Sub-OU within "Staff": `Finance`, `HR`, `IT`, `Marketing`
 
-<img src="https://github.com/user-attachments/assets/a1e80a06-16fc-4de9-9756-04c3728edb13" width="750" alt="Staff OU">
+<img src="https://github.com/user-attachments/assets/112f9173-3278-40ed-9b92-59e4a057c542" width="750" alt="Staff OU">
 
 8. Follow the same steps as above but create `Admin Accounts` and `Admin Groups` inside of parent OU `_Admin`
 
-<img src="https://github.com/user-attachments/assets/f44302f1-c691-4732-86e5-9f8401af78e7" width="750" alt="Admin Sub-Ou">
+<img src="https://github.com/user-attachments/assets/b0e5e5f6-fd15-46d8-87f4-5f4e5844fdb4" width="750" alt="Admin Sub-Ou">
 
 ---
-
-
 
 
 
