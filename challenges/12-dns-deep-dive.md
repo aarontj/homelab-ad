@@ -32,7 +32,7 @@ The **Reverse Lookup** is used to translate the IP `192.168.0.30` into a hostnam
 4. Used `nslookup` on CMD and it returned **Default Sever:** Unknown & **Address:** ::1
 5. This meant that DNS was not resolving properly
 
-<img src="https://github.com/user-attachments/assets/256975a1-50b5-45f7-a0e3-f1dc67de8849" width="750" alt="IPV6 Error">
+<img src="https://github.com/user-attachments/assets/78342272-fa0c-4d01-8d31-00a8cd6c1381" width="750" alt="IPV6 Error">
 
 ### Diagnosis
 The main issue with the result of nslookup was the address returned `::1`, this type of address is a IPV6 address. What i found was that `::1` is inputted as the preferred IPV6 DNS address. 
@@ -67,6 +67,5 @@ After removing the IPV6 address and selecting "Obtain DNS server automatically",
 <img src="https://github.com/user-attachments/assets/4cc31553-9c4d-46b9-a7e8-f36c26a0ebba" width="750" alt="Resolve">
 
 ---
-
 
 
