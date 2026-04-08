@@ -32,11 +32,11 @@ The **Reverse Lookup** is used to translate the IP `192.168.0.30` into a hostnam
 4. Used `nslookup` on CMD and it returned **Default Sever:** Unknown & **Address:** ::1
 5. This meant that DNS was not resolving properly
 
-<img src="https://github.com/user-attachments/assets/bd36ec5d-c04f-4cc3-aaa2-2a697fc1c19a" width="750" alt="IPV6 Error">
+<img src="https://github.com/user-attachments/assets/256975a1-50b5-45f7-a0e3-f1dc67de8849" width="750" alt="IPV6 Error">
 
 ### Diagnosis
 The main issue with the result of nslookup was the address returned `::1`, this type of address is a IPV6 address. What i found was that `::1` is inputted as the preferred IPV6 DNS address. 
-<img src="https://github.com/user-attachments/assets/369555e9-e375-4a3e-a84d-f3f4c2de426b" width="750" alt="IPV6 Error">
+<img src="https://github.com/user-attachments/assets/50efcd91-8bb9-4a67-8221-8c2d9b4489a3" width="750" alt="IPV6 Error">
 
 After removing the IPV6 address and selecting "Obtain DNS server automatically", when using nslookup on CMD it showed the IP address of the DC/ DNS server `192.168.0.30` but the "Default Server" remained unknown.
 
@@ -47,22 +47,26 @@ After removing the IPV6 address and selecting "Obtain DNS server automatically",
 2. Expand the forest and right click "Reverse Lookup Zones"
 3. Create a "New Zone" > "Primary Zone" > "To all DNS servers running on domain controllers in this domain: tjserverlab.local" > "IPV4 Reverse Lookup Zone" > input `192.168.0`
 4. This would have created a new zone
-<img src="https://github.com/user-attachments/assets/000d9ebf-a9a2-4e85-b291-ee52c1fdc32c" width="750" alt="Reverse Lookup Zone">
+<img src="https://github.com/user-attachments/assets/a61dc112-c1d7-427b-9720-aeec0fa7842d" width="750" alt="Reverse Lookup Zone">
 
 5. Double click on the new folder created inside of Reverse Lookup
 6. Right click and create "New Pointer (PTR)"
    
 7. In "Host IP Address" put the DC/DNS server `192.168.0.30` and for "Host Name" browse for the A Record (same as parent folder)
-<img src="https://github.com/user-attachments/assets/f81ec5cc-ab7a-4ac0-b9e3-412f1e4a8553" width="750" alt="PTR">
+<img src="https://github.com/user-attachments/assets/8c4ed69b-250d-4919-b133-78aa6ccb0865" width="750" alt="PTR">
 
 8. Click apply and ok
 9. When you try nslookup on CMD again it would now resolve as **Default Server:** `tjeserverlab.local` & **Address:** `192.168.0.30`
-<img src="https://github.com/user-attachments/assets/161f6bc5-d437-45f1-9d3f-05248ad1aed1" width="750" alt="Nslookup Fixed">
+<img src="https://github.com/user-attachments/assets/73633138-a454-4e55-8792-6e39fbd28cc7" width="750" alt="Nslookup Fixed">
 
 ---
 ### Screenshot 
 
 **Verifying that it resolves**
 
-<img src="https://github.com/user-attachments/assets/8935f5a6-2653-4fd8-be09-b63adbb37917" width="750" alt="Resolve">
+<img src="https://github.com/user-attachments/assets/4cc31553-9c4d-46b9-a7e8-f36c26a0ebba" width="750" alt="Resolve">
+
+---
+
+
 
