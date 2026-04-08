@@ -13,33 +13,28 @@
 2. Click on Add Roles and Features
 
 **Add Roles and Features**
-<img src="https://github.com/user-attachments/assets/a375564e-276a-4046-b784-618c01bf405a" width="1000" alt="Add Roles">
+<img src="https://github.com/user-attachments/assets/af52caa8-c94a-40ea-b39b-0c406f33412a" width="1000" alt="Add Roles">
 
 3. Click next then select Role-based or feature based installation
 4. Select the "Computer" that you want to assign as a Server
 
 **Select Server**
-<img src="https://github.com/user-attachments/assets/8fd2e816-0c0a-491e-b56d-5722594d859f" width="1000" alt="Add Roles">
+<img src="https://github.com/user-attachments/assets/62e781e9-cfcd-43b5-b3ea-d89b8e4a83fe" width="1000" alt="Add Roles">
 
 5. Cick next and choose **Active Directory Domain Services** and **DNS Server**
 
 **Select DS and DNS**
-<img src="https://github.com/user-attachments/assets/71e6f0f1-7215-49cd-99a1-258f28fba191" width="1000" alt="Add Roles">
+<img src="https://github.com/user-attachments/assets/887f8225-ec80-4003-86c9-2d0745bc7247" width="1000" alt="Add Roles">
 
 6. Click install or next and this will start the install
 
 **Installing DS & DNS**
-<img src="https://github.com/user-attachments/assets/e6d0c1a5-85e7-4501-ae25-f3c01a891ce6" width="1000" alt="Add Roles">
+<img src="https://github.com/user-attachments/assets/cb1936a6-eb78-4082-be8f-75315421a19d" width="1000" alt="Add Roles">
 
 7. Once it has completed there will be a yellow notification at the top of Server Mangger asking to Promote to DC (Did not take a screen shot of this)
 
 **Promote this Server**
-<img src="https://github.com/user-attachments/assets/045faf31-fc23-4885-96cf-942934e6215e" width="1000" alt="Promote DC">
+<img src="https://github.com/user-attachments/assets/0cc024b8-82b7-442b-8062-16d7977619d5" width="1000" alt="Promote DC">
 
 ---
-
-
-
-
-
 
