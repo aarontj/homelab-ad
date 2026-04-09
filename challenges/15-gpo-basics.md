@@ -83,12 +83,12 @@ This is a 2 step process as we will need to create a folder which users can acce
 
 4. Right click to open "Properties" then click "Sharing"
 5. Click on "Advanced Sharing" and click the "Share this folder box"
-6. Type the name `Wallpaper$` the "$" is to make the wallpaper folder hidden
+6. Type the name `Wallpaper$` the "$" is to make the wallpaper folder hidden on the network
 7. Click "Add" then click on "permissions", ensure that "everyone" have read only access
 
 <img src="https://github.com/user-attachments/assets/a36720cc-143d-4f0c-b7f6-dbf04967c101" width="750" alt="advancedpermission">
 
-9. Ensure to press "Apply" as you exit out or it will not save the changes
+9. Press "Apply" as you exit out or it will not save the changes
 10. Now click "Share..." in the box for "Network File and Folder Sharing" and ensure that "Everyone" only have "Read" access
 
 <img src="https://github.com/user-attachments/assets/0898cb95-67ae-458d-803d-53db69cd5d4a" width="750" alt="share">
