@@ -51,7 +51,7 @@
 1. On "Server Manager" head to "AD Users and Computers"
 2. Find a user eg. `Tom Beckett` in `Staff/ Finance`
 
-<img src="https://github.com/user-attachments/assets/34f3e64e-9dd2-424e-8149-bdcca53468b" width="750" alt="user">
+<img src="https://github.com/user-attachments/assets/32c18195-5332-4e35-a6e6-7fea61071dcc" width="750" alt="user">
 
 3. Click on the profile then seelct the "Profile" section
 4. Paste the network address `\\WIN-DH9D3SPO213\Profiles$\%username%` in "Profile Path", `%username%` is used so that it automatically inputs the username
@@ -64,5 +64,6 @@
 <img src="https://github.com/user-attachments/assets/dab334f9-12d9-41b4-b333-a6d740f13c30" width="750" alt="success">
 
 ---
+
 
 
