@@ -16,7 +16,13 @@ Host machine specs:
 - Windows 11 Pro
 
 ---
+## ✅ Progress
 
+![18/27](https://img.shields.io/badge/challenges-18%2F27%20complete-1D9E75?style=flat-square)
+
+**18 / 27 challenges complete** — 67%
+
+---
 ## 🏗️ Lab Environment
 
 | Component | VM: `WIN-DH9D3SPO213` (Domain Controller) | VM: `PC1` (Workstation) |
