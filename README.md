@@ -21,6 +21,7 @@ Host machine specs:
 ![Progress](https://progress-bar.xyz/67/?title=Challenges&width=400&color=1D9E75)
 
 **18 / 27 challenges complete** — 67%
+
 ---
 ## 🏗️ Lab Environment
 
