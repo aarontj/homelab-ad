@@ -113,7 +113,7 @@ merged
 
 ---
 
-**Challenge 1: Orientation**
+### [Challenge 1: Orientation](challenges/01-03-VM-setup.md)
 Goal: Hyper-V Manager is open and ready on the host machine.
 
 - Reviewed Windows Server 2022 system requirements
@@ -125,7 +125,7 @@ Outcome: Hyper-V Manager running, ISO downloaded and staged.
 
 ---
 
-**Challenge 2: VM Creation**
+### [Challenge 2: VM Creation](challenges/01-03-VM-setup.md)
 Goal: VM boots to the Windows Server 2022 setup screen.
 
 - Created a new VM in Hyper-V Manager with 4 GB RAM, 2 vCPUs, 60 GB dynamic VHD
@@ -136,7 +136,7 @@ Outcome: VM created and booting successfully from ISO.
 
 ---
 
-**Challenge 3: OS Installation**
+### [Challenge 3: OS Installation](challenges/01-03-VM-setup.md)
 Goal: Server is fully patched and at the desktop.
 
 - Completed Windows Server 2022 Standard (Desktop Experience) installation
@@ -148,7 +148,7 @@ Outcome: Clean, patched Windows Server 2022 installation ready for configuration
 
 ---
 
-**Challenge 4: Networking**
+### [Challenge 4: Networking](challenges/04-networking.md)
 Goal: VM has a static IP address and confirmed internet connectivity.
 
 - Created an External virtual switch in Hyper-V Manager for internet access
@@ -161,7 +161,7 @@ Outcome: VM has a stable network configuration with DNS pointing to localhost in
 
 ---
 
-**Challenge 5: AD DS Role Installation**
+### [Challenge 5: AD DS Role Installation](challenges/05-ad-ds-role-installation.md)
 Goal: Active Directory Domain Services and DNS roles installed successfully.
 
 - Opened Server Manager > Add Roles and Features
@@ -173,7 +173,8 @@ Outcome: AD DS and DNS roles installed. Server ready to be promoted to a Domain 
 
 ---
 
-**Challenge 6: Promote to Domain Controller**
+### [Challenge 6: Promote to Domain Controller](challenges/06-promote-to-domain-controller.md)
+
 Goal: `lab.local` domain created and `lab-dc01` is the first Domain Controller.
 
 - Clicked "Promote this server to a domain controller" from the Server Manager notification
@@ -191,7 +192,7 @@ Outcome: `lab.local` domain is live. `lab-dc01` confirmed as the first DC.
 
 ---
 
-**Challenge 7: AD Basics**
+### [Challenge 7: AD Basics](challenges/07-ad-basics.md)
 Goal: Familiar with the three core AD management consoles.
 
 - Opened Active Directory Users and Computers (ADUC) via Server Manager > Tools
@@ -203,7 +204,7 @@ Outcome: Familiar with ADUC, AD Domains and Trusts, and AD Sites and Services.
 
 ---
 
-**Challenge 8: Organisational Units and Structure**
+### [Challenge 8: Organisational Units and Structure](challenges/08-organisational-units.md)
 Goal: OU structure mimicing a real company hierarchy.
 
 - In ADUC, right-clicked `tjserverlab.local` > New > Organizational Unit
@@ -215,7 +216,7 @@ Outcome: OU hierarchy built to reflect a real-world company structure.
 
 ---
 
-**Challenge 9: User Accounts**
+### [Challenge 9: User Accounts](challenges/09-user-accounts.md)
 Goal: Create user accounts for each department OU.
 
 - Created 2 user accounts per department placed in their respective OUs (e.g. `Jayden Smith` in `HR`)
@@ -226,7 +227,7 @@ Outcome: 8 domain user accounts created with consistent naming conventions and b
 
 ---
 
-**Challenge 10: Security Groups**
+### [Challenge 10: Security Groups](challenges/10-security-groups.md)
 Goal: Users are organised into correctly scoped security groups.
 
 - Created Security Groups: `GRP-IT-Admins`, `GRP-HR`, `GRP-Finance`, `GRP-Marketing` (Global, Security type)
@@ -238,7 +239,7 @@ Outcome: Group structure in place. Users inherit permissions through group membe
 
 ---
 
-**Challenge 11: Password Policy**
+### [Challenge 11: Password Policy](challenges/11-password-policy.md)
 Goal: Default Domain Policy has a password policy configured and enforced.
 
 - Opened Group Policy Management Console (GPMC)
@@ -254,7 +255,7 @@ Outcome: Password policy enforced domain-wide via Default Domain Policy.
 
 ---
 
-**Challenge 12: DNS Deep Dive**
+### [Challenge 12: DNS Deep Dive](challenges/12-dns-deep-dive.md)
 Goal: Understand and verify DNS is serving the domain correctly.
 
 - Opened DNS Manager via Server Manager > Tools
@@ -276,7 +277,7 @@ From this section onwards, the DC hostname appears as `WIN-DH9D3SPO213` as noted
 
 ---
 
-**Challenge 13: Client VM Setup**
+### [Challenge 13: Client VM Setup](challenges/13-14-client-vm-setup-domain-join.md)
 Goal: Second VM (`PC1`) created and running.
 
 - Created a second Hyper-V VM named `PC1` with 4 GB RAM, 2 vCPUs, 60 GB dynamic VHD
@@ -289,7 +290,7 @@ Outcome: Client VM is network-ready and can resolve the domain controller by nam
 
 ---
 
-**Challenge 14: Domain Join**
+### [Challenge 14: Domain Join](challenges/13-14-client-vm-setup-domain-join.md)
 Goal: `PC1` is joined to `tjserverlab.local` and a domain user can log in.
 
 - On `PC1`: System Properties > Change > Member of Domain > `tjserverlab.local`
@@ -302,7 +303,7 @@ Outcome: Client domain-joined. Domain user accounts authenticate successfully fr
 
 ---
 
-**Challenge 15: GPO Basics**
+### [Challenge 15: GPO Basics](challenges/15-gpo-basics.md)
 Goal: First custom GPO applied to workstations.
 
 - Created a new GPO named `Workstation-Baseline` and link it to the `Workstations` OU
@@ -314,7 +315,7 @@ Outcome: First custom GPO confirmed applied to the workstation.
 
 ---
 
-**Challenge 16: Login Scripts and Drive Mapping**
+### [Challenge 16: Login Scripts and Drive Mapping](challenges/16-login-scripts-drive-mapping.md)
 Goal: HR users get `H:` drive mapped automatically at login.
 
 - On `WIN-DH9D3SPO213`, created a shared folder: `C:\Shares\HR` (share name: `HR$`)
@@ -327,7 +328,7 @@ Outcome: HR users get `H:` drive mapped automatically at login via GPO preferenc
 
 ---
 
-**Challenge 17: Roaming Profiles**
+### [Challenge 18: Software Deployment via GPO](challenges/18-software-deployment-gpo.md)
 Goal: User profile follows them across domain computers.
 
 - On `WIN-DH9D3SPO213`, created a shared folder: `C:\Profiles` (share name: `Profiles$`)
