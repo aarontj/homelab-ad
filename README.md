@@ -16,14 +16,11 @@ Host machine specs:
 - Windows 11 Pro
 
 ---
-## Progress
+## ✅ Progress
 
-![18/27](https://img.shields.io/badge/challenges-18%2F27%20complete-1D9E75?style=flat-square)
+![Progress](https://progress-bar.xyz/67/?title=Challenges&width=400&color=1D9E75)
 
 **18 / 27 challenges complete** — 67%
-
-`█████████████████░░░░░░░░░░░░░`
-
 ---
 ## 🏗️ Lab Environment
 
