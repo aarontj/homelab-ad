@@ -113,7 +113,7 @@ merged
 
 ---
 
-### [Challenge 1: Orientation](challenges/01-03-VM-setup.md)
+### [Challenge 1: Orientation](challenges/01-03-VM-Setup.md)
 Goal: Hyper-V Manager is open and ready on the host machine.
 
 - Reviewed Windows Server 2022 system requirements
@@ -125,7 +125,7 @@ Outcome: Hyper-V Manager running, ISO downloaded and staged.
 
 ---
 
-### [Challenge 2: VM Creation](challenges/01-03-VM-setup.md)
+### [Challenge 2: VM Creation](challenges/01-03-VM-Setup.md)
 Goal: VM boots to the Windows Server 2022 setup screen.
 
 - Created a new VM in Hyper-V Manager with 4 GB RAM, 2 vCPUs, 60 GB dynamic VHD
@@ -136,7 +136,7 @@ Outcome: VM created and booting successfully from ISO.
 
 ---
 
-### [Challenge 3: OS Installation](challenges/01-03-VM-setup.md)
+### [Challenge 3: OS Installation](challenges/01-03-VM-Setup.md)
 Goal: Server is fully patched and at the desktop.
 
 - Completed Windows Server 2022 Standard (Desktop Experience) installation
