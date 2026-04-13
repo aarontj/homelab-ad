@@ -1,4 +1,4 @@
-### [Challenge 19: PowerShell AD Automation](challenges/19-powershell-ad-automation.md)
+### Challenge 19: PowerShell AD Automation
 
 **Goal**: Create and manage AD objects using PowerShell only.
 
