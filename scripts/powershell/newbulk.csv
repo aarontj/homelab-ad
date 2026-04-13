@@ -1,0 +1,11 @@
+firstname,surname,sam,department,organization,title,password
+John,Smith,j.smith,Finance,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Emily,Johnson,e.johnson,Hr,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Michael,Brown,m.brown,Finance,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Sarah,Davis,s.davis,Finance,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Daniel,Wilson,d.wilson,Finance,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Olivia,Taylor,o.taylor,Hr,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+James,Anderson,j.anderson,Hr,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Sophia,Thomas,s.thomas,Hr,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+William,Moore,w.moore,Marketing,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
+Ava,Martin,a.martin,Marketing,"OU=Bulk,OU=Staff,DC=Tjserverlab,DC=local",Manager,#Testpowershell123
