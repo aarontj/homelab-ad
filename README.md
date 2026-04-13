@@ -18,9 +18,9 @@ Host machine specs:
 ---
 ## ✅ Progress
 
-![Progress](https://progress-bar.xyz/67/?title=Challenges&width=400&color=1D9E75)
+![Progress](https://progress-bar.xyz/70/?title=Challenges&width=400&color=1D9E75)
 
-**18 / 27 challenges complete** — 67%
+**19 / 27 challenges complete** — 70%
 
 ---
 ## 🏗️ Lab Environment
@@ -102,6 +102,7 @@ merged
 ├── scripts/
 │   └── powershell/
 │       ├── bulk-create-users.ps1
+│       ├── newbulk.csv
 │       ├── audit-domain-admins.ps1
 │       └── ad-security-check.ps1
 └── docs/
@@ -364,7 +365,7 @@ Outcome: Software deployed silently to domain workstations via Group Policy.
 
 ---
 
-**Challenge 19: PowerShell AD Automation**
+### [Challenge 19: PowerShell AD Automation](challenges/19-powershell-ad-automation.md)
 Goal: Create and manage AD objects using PowerShell only.
 
 - Opened PowerShell as Administrator on `WIN-DH9D3SPO213`
