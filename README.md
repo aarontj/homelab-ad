@@ -334,7 +334,7 @@ Outcome: HR users get `H:` drive mapped automatically at login via GPO preferenc
 
 ---
 
-### [Challenge 18: Software Deployment via GPO](challenges/18-software-deployment-gpo.md)
+### [Challenge 17: Roaming Profiles](challenges/17-roaming-profiles.md)
 Goal: User profile follows them across domain computers.
 
 - On `WIN-DH9D3SPO213`, created a shared folder: `C:\Profiles` (share name: `Profiles$`)
@@ -346,7 +346,7 @@ Outcome: Roaming profile confirmed. User settings persist across domain-joined m
 
 ---
 
-**Challenge 18: Software Deployment via GPO**
+### [Challenge 18: Software Deployment via GPO](challenges/18-software-deployment-gpo.md)
 Goal: Software deployed to workstations via GPO without touching each machine manually.
 
 - Downloaded the 7-Zip MSI installer
