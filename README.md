@@ -381,11 +381,11 @@ Outcome: Bulk user creation and account management completed entirely through Po
 **Challenge 20: Delegation of Control and RBAC**
 Goal: Helpdesk can reset passwords but cannot create accounts.
 
-- In ADUC, right-clicked the `HR_Department` OU and selected Delegate Control
-- Delegated to the `Helpdesk` group: Reset user passwords and force password change at next logon
-- Created a helpdesk user account, added it to the `Helpdesk` group, and tested the password reset
-- Confirmed the helpdesk account could not create new user accounts
-
+- In ADUC, right-clicked the `HR` OU and selected Delegate Control
+- Delegated to the `GRP-IT-Admins` group: Reset user passwords and force password change at next logon
+- Created a IT/ helpdesk user account, added it to the `GRP-IT-Admins` group, and tested the password reset
+- Confirmed the GRP-IT-Admins account could not create new user accounts
+  
 Outcome: Delegation configured. Least privilege verified: helpdesk has password reset rights only.
 
 ---
