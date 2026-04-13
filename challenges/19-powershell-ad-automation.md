@@ -1,4 +1,4 @@
-# Challenge 19: PowerShell AD Automation
+### [Challenge 19: PowerShell AD Automation](challenges/19-powershell-ad-automation.md)
 
 **Goal**: Create and manage AD objects using PowerShell only.
 
@@ -113,12 +113,12 @@ The heading names are important but can be adjusted in the script as long as you
 
 ### Creating folder in DC for CSV file
 
-I created a folder within C: drive of the domain controller called scripts to store the **CSV** file, the path to this folder is: C:\scripts
+I created a folder within C: drive of the domain controller called "scripts" to store the **CSV** file, the path to this folder is: C:\scripts
 
 <img src="https://github.com/user-attachments/assets/d1d3f3dd-1516-4008-8bcb-75b629d2a50e" width="750" alt="Folder">
 
 ### Script Modification
-This script was modified from the blog to fit the requirements of the challenge however, I have kept `ChangePasswordAtLogon = $True` as i want these Users to change password upon logging in for the first time.
+This script was modified from the blog to fit the requirements of the challenge however, I have kept `ChangePasswordAtLogon = $True` as i want these Users to change password upon logging on for the first time.
 
 The following changes were made:
 
