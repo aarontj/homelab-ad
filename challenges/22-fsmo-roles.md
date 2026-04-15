@@ -53,11 +53,13 @@ DC2: tjserverlab.local
 
 This role can be utilised for renaming the domain or moving the domain within the forest.
 
+---
 ### RID Master (Relative Identifier Master) 
 Assigns SID Value for every object created in AD. Essentially a unique code (not repeated within the same **forest** that identifies each object within AD. 
 
 This role is responsible for moving objects from one domain to another within a forest.
 
+---
 ### PDC Emulator (Primary Domain Controller Emulator)**
 Responsible for authenticaation requests, changing passwords & managing GPO. Used to synchronise time with all devices with their preferred DC.
 
