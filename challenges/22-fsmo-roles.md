@@ -73,13 +73,29 @@ Require for multi-domain environemnt.
 Responsible for updating SID & DN (Distinguished name) in cross domain object
 
 ---
-### FSMO 
+### Running `netdom query fsmo` 
 
 Running `netdom query fsmo` to identify all 5 FSMO roles and holders.
 
 <img src="https://github.com/user-attachments/assets/a7c64a30-93af-44d3-8807-32481b2bb876" width="750" alt="CMD">
 
 As there is only 1 domain `tjserverlab.local` within this forest, all FSMO roles are within the same dc/ domain.
+
+---
+
+### Running `regsvr32 schmmgmt.dll`
+
+Running `regsvr32 schmmgmt.dll` to register the Active Directory Snap in
+
+<img src="https://github.com/user-attachments/assets/a9d0afd2-e5ba-4d03-b785-3405507a9d85" width="750" alt="register">
+
+Adding **Active Directory Schema** snap into MMC (Microsoft Management Console)
+
+<img src="https://github.com/user-attachments/assets/725b60fb-d51a-4d4b-9709-9a70576cde40" width="750" alt="Adding snapin">
+
+Inside of the **Class Schema**
+
+<img src="https://github.com/user-attachments/assets/079b1e10-1e79-4f15-8b25-697b995e4909" width="750" alt="Class Schema">
 
 ---
 
