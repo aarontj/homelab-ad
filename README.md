@@ -439,6 +439,8 @@ Goal: Deploy and manage a DHCP server to automate IP address assignment within t
 - Verified `PC1` received an IP address within the scope range using `ipconfig /all`
 - Created a DHCP reservation for `PC1` based on its MAC address
 
+Outcome: DHCP server deployed and authorised in AD. `PC1` confirmed receiving an automatic IP assignment with correct scope options. Reservation set for `PC1`.
+
 ---
 
 **Challenge 25: Final Challenge**
