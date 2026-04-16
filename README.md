@@ -447,8 +447,7 @@ Outcome: DHCP server deployed and authorised in AD. `PC1` confirmed receiving an
 Goal: Build a complete AD environment from scratch with no reference material.
 
 - Created a new department OU, user account, security group, and drive map GPO from memory
-- Simulated a locked-out domain admin account and recovered access using DSRM mode
-- Ran `dcdiag /test:all` and confirmed all checks passed
+- Booted into DSRM to simulate emergency DC recovery access — demonstrated how to bypass domain authentication when AD is unavailable or broken
 - Took a final Hyper-V Checkpoint: `Challenge 25 Complete`
 - Wrote a lab summary covering what was built, what was learned, and what to study next
 
