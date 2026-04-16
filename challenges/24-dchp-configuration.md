@@ -1,4 +1,4 @@
-<img width="1357" height="731" alt="image" src="https://github.com/user-attachments/assets/90b0d502-3c6d-4d5b-aebe-2d23be30f98d" />### Challenge 24: DHCP Server Configuration
+### Challenge 24: DHCP Configuration
 
 **Goal**: Deploy and manage a DHCP server to automate IP address assignment within the lab domain.
 
