@@ -1,4 +1,4 @@
-# 🖥️ Active Directory Homelab: 27 Challenges
+# 🖥️ Active Directory Homelab: 25 Challenges
 
 > **Building a production-grade Windows Server 2022 domain from scratch. Documenting progress as each challenge is completed.**
 
@@ -6,7 +6,7 @@
 
 ## 📋 Overview
 
-This repository documents 27 hands-on challenges building a functional **Windows Server 2022 Active Directory domain** using **Hyper-V** on my personal desktop. Each challenge includes the tasks completed, the goal and the outcome.
+This repository documents 25 hands-on challenges building a functional **Windows Server 2022 Active Directory domain** using **Hyper-V** on my personal desktop. Each challenge includes the tasks completed, the goal and the outcome.
 
 Host machine specs:
 - AMD Ryzen 9700x
@@ -18,9 +18,9 @@ Host machine specs:
 ---
 ## ✅ Progress
 
-![Progress](https://progress-bar.xyz/70/?title=Challenges&width=400&color=1D9E75)
+![Progress](https://progress-bar.xyz/96/?title=Challenges&width=400&color=1D9E75)
 
-**19 / 27 challenges complete** — 70%
+**24 / 25 challenges complete** — 96%
 
 ---
 ## 🏗️ Lab Environment
@@ -41,7 +41,7 @@ Host machine specs:
 
 ### 📝 Lab Notes
 
-This project follows 27 Active Directory homelab challenges. A few things worth noting before diving in.
+This project follows 25 Active Directory homelab challenges. A few things worth noting before diving in.
 
 The main Domain Controller used throughout this lab has the hostname `WIN-DH9D3SPO213` instead of the intended `LAB-DC01`. Honestly, I didn't think about renaming the server before promoting it to a Domain Controller and by the time I realised, I was already halfway through the challenges. I did attempt the rename after promotion, which broke the domain trust relationship and needed a rollback to a previous checkpoint. Lesson learned: always rename before promoting.
 
@@ -95,16 +95,12 @@ merged
 │   ├── 21-ad-backup.md
 │   ├── 22-fsmo-roles.md
 │   ├── 23-event-viewer-auditing.md
-│   ├── 24-fine-grained-password-policy.md
-│   ├── 25-ad-recycle-bin.md
-│   ├── 26-security-audit.md
-│   └── 27-final-challenge.md
+│   ├── 24-dchp-configuration.md
+│   └── 25-final-challenge.md
 ├── scripts/
 │   └── powershell/
 │       ├── bulk-create-users.ps1
-│       ├── newbulk.csv
-│       ├── audit-domain-admins.ps1
-│       └── ad-security-check.ps1
+│       └── newbulk.csv
 └── docs/
     └── lab-summary.md
 ```
@@ -426,56 +422,32 @@ Outcome: Able to trace logon events, failed attempts, and account lockouts from 
 
 ---
 
-**Challenge 24: Fine-Grained Password Policies**
-Goal: Admins have stricter password requirements than standard users.
+**Challenge 24: DHCP Server Configuration**
+Goal: Deploy and manage a DHCP server to automate IP address assignment within the lab domain.
 
-- Opened Active Directory Administrative Center (ADAC) on `WIN-DH9D3SPO213`
-- Navigated to `tjserverlab (local)` > System > Password Settings Container
-- Created a Password Settings Object (PSO) named `Admins-Policy` with precedence 1
-- Set 16 character minimum length and lockout after 3 attempts, applied to `GRP-IT-Admins`
-- Verified the PSO overrides the Default Domain Policy for members of `GRP-IT-Admins`
-
-Outcome: Fine-grained password policy applied. Admin accounts now have stricter requirements than standard users.
-
----
-
-**Challenge 25: AD Recycle Bin**
-Goal: Deleted AD objects can be recovered without a full restore.
-
-- Enabled the AD Recycle Bin:
-  ```powershell
-  Enable-ADOptionalFeature 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target 'tjserverlab.local'
-  ```
-- Deleted a test user account in ADUC
-- Restored the deleted object:
-  ```powershell
-  Get-ADObject -Filter {DisplayName -eq 'Test User'} -IncludeDeletedObjects | Restore-ADObject
-  ```
-- Verified the user reappeared in ADUC with all attributes intact
-
-Outcome: AD Recycle Bin enabled and tested. Objects deleted by mistake are recoverable without DSRM or a backup restore.
+- Installed the DHCP Server role via Server Manager on `WIN-DH9D3SPO213`
+- Authorised the DHCP server in Active Directory via DHCP Manager
+- Created a new scope covering the lab subnet (`192.168.0.100`–`192.168.0.200`, subnet mask `255.255.255.0`)
+- Configured scope options:
+  - **003 Router:** `192.168.0.1` (default gateway)
+  - **006 DNS Servers:** `192.168.0.10` (domain controller)
+  - **015 DNS Domain Name:** `tjserverlab.local`
+- Set lease duration to 8 days
+- Activated the scope
+- On `PC1`, changed the network adapter from static IP to **Obtain an IP address automatically** and set DNS to **Obtain DNS server address automatically**
+- Ran `ipconfig /release` and `ipconfig /renew` to force a lease request
+- Verified `PC1` received an IP address within the scope range using `ipconfig /all`
+- Created a DHCP reservation for `PC1` based on its MAC address
 
 ---
 
-**Challenge 26: Security Audit and Hardening**
-Goal: Review and tighten the AD security posture.
-
-- Ran `Get-ADUser -Filter {Enabled -eq $true -and PasswordNeverExpires -eq $true}` to identify accounts with non-expiring passwords
-- Ran `Get-ADGroupMember -Identity 'Domain Admins'` to verify only named admin accounts are members
-- Enabled audit policy via Default Domain Controllers Policy > Audit Account Logon Events = Success/Failure
-- Reviewed the Security event log for logon failures on the DC
-
-Outcome: Security review complete. Non-expiring password accounts identified, Domain Admins membership verified, audit logging enabled.
-
----
-
-**Challenge 27: Final Challenge**
+**Challenge 25: Final Challenge**
 Goal: Build a complete AD environment from scratch with no reference material.
 
 - Created a new department OU, user account, security group, and drive map GPO from memory
 - Simulated a locked-out domain admin account and recovered access using DSRM mode
 - Ran `dcdiag /test:all` and confirmed all checks passed
-- Took a final Hyper-V Checkpoint: `Challenge 27 Complete`
+- Took a final Hyper-V Checkpoint: `Challenge 25 Complete`
 - Wrote a lab summary covering what was built, what was learned, and what to study next
 
 Outcome: Challenges complete. Fully functional Windows Server 2022 Active Directory domain built, broken, and fixed entirely hands-on.
