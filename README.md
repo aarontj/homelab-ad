@@ -6,7 +6,7 @@
 
 ## 📋 Overview
 
-This repository documents 25 hands-on challenges building a functional **Windows Server 2022 Active Directory domain** using **Hyper-V** on my personal desktop. Each challenge includes the tasks completed, the goal and the outcome.
+This repository documents 25 hands-on challenges building a functional **Windows Server 2022 Active Directory domain** using **Hyper-V** on my personal desktop. Each challenge includes the tasks completed, the goal and the outcome. I came across this idea when i was looking at upskilling myself, alot of people have mentioned about creating your own homelab to learn new skills and that's how this idea came to life. I had a little bit of experience using Active Directory while studying for my Certificate 4 in IT, but i wanted to go deeper and learn skills that i will be using working at help desk.
 
 Host machine specs:
 - AMD Ryzen 9700x
@@ -18,9 +18,9 @@ Host machine specs:
 ---
 ## ✅ Progress
 
-![Progress](https://progress-bar.xyz/96/?title=Challenges&width=400&color=1D9E75)
+![Progress](https://progress-bar.xyz/100/?title=Challenges&width=400&color=1D9E75)
 
-**24 / 25 challenges complete** — 96%
+**25 / 25 challenges complete** — 100% - Completed!
 
 ---
 ## 🏗️ Lab Environment
@@ -374,7 +374,7 @@ Outcome: Bulk user creation and account management completed entirely through Po
 
 ---
 
-**Challenge 20: Delegation of Control and RBAC**
+### [Challenge 20: Delegation & RBAC](challenges/20-delegation-rbac.md)
 Goal: Helpdesk can reset passwords but cannot create accounts.
 
 - In ADUC, right-clicked the `HR` OU and selected Delegate Control
@@ -386,7 +386,7 @@ Outcome: Delegation configured. Least privilege verified: helpdesk has password 
 
 ---
 
-**Challenge 21: AD Backup (System State)**
+### [Challenge 21: AD Backup](challenges/21-ad-backup.md)
 Goal: System State backup completes successfully.
 
 - Installed Windows Server Backup via Add Roles and Features > Features
@@ -398,7 +398,7 @@ Outcome: System State backup completed. AD database is recoverable in the event 
 
 ---
 
-**Challenge 22: FSMO Roles**
+### [Challenge 22: FSMO Roles](challenges/22-fsmo-roles.md)
 Goal: Identify and explain all 5 FSMO roles.
 
 - Ran `netdom query fsmo` to identify all 5 FSMO role holders
@@ -410,7 +410,7 @@ Outcome: All 5 FSMO roles identified. Understand the purpose of each role and th
 
 ---
 
-**Challenge 23: Event Viewer and Security Auditing**
+### [Challenge 23: Event Viewer & Auditing](challenges/23-event-viewer-auditing.md)
 Goal: Audit user logon and lockout events using Event Viewer.
 
 - Opened Event Viewer > Windows Logs > Security
@@ -422,7 +422,7 @@ Outcome: Able to trace logon events, failed attempts, and account lockouts from 
 
 ---
 
-**Challenge 24: DHCP Server Configuration**
+### [Challenge 24: DHCP Configuration](challenges/24-dchp-configuration.md)
 Goal: Deploy and manage a DHCP server to automate IP address assignment within the lab domain.
 
 - Installed the DHCP Server role via Server Manager on `WIN-DH9D3SPO213`
@@ -443,7 +443,7 @@ Outcome: DHCP server deployed and authorised in AD. `PC1` confirmed receiving an
 
 ---
 
-**Challenge 25: Final Challenge**
+### [Challenge 25: Final Challenge](challenges/25-final-challenge.md)
 Goal: Build a complete AD environment from scratch with no reference material.
 
 - Created a new department OU, user account, security group, and drive map GPO from memory
