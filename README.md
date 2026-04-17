@@ -422,7 +422,7 @@ Outcome: Able to trace logon events, failed attempts, and account lockouts from 
 
 ---
 
-### [Challenge 24: DHCP Configuration](challenges/24-dchp-configuration.md)
+### [Challenge 24: DHCP Configuration](challenges/24-dhcp-configuration.md)
 Goal: Deploy and manage a DHCP server to automate IP address assignment within the lab domain.
 
 - Installed the DHCP Server role via Server Manager on `WIN-DH9D3SPO213`
